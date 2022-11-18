@@ -7,9 +7,7 @@
 
 body {
   background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
 }
 
 .visually-hidden {
@@ -60,16 +58,22 @@ button {
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
 
 /*------------- HEADER ------------*/
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
   align-items: center;
 }
-.site-navigation {
+.navigation {
+  padding-left: 93px;
+}
+.site-nav {
   display: flex;
 }
 .contact-nav {
@@ -84,17 +88,12 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
 }
 .logo-link .style {
   color: var(--accent-color);
 }
 /* SITE-NAV */
-.site-nav {
-  display: flex;
-  margin-left: 93px;
-  align-items: center;
-}
+
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -109,7 +108,6 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -127,7 +125,6 @@ button {
 }
 .contact-nav .link {
   color: var(--primary-text-color);
-  text-decoration: none;
 }
 .contact-nav .link:hover,
 .contact-nav .link:focus {
@@ -157,10 +154,11 @@ button {
   text-transform: uppercase;
 }
 .button-text {
+  border: none;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-weight: 700;
-  font-size: 16px;
+
   line-height: 1.87;
 
   letter-spacing: 0.06em;
@@ -169,8 +167,10 @@ button {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.button-text:hover,
+.button-text:focus,
 .button-text:active {
-  background: #188ce8;
+  background-color: #188ce8;
 }
 
 /* FEATURE */
@@ -185,12 +185,12 @@ button {
 .feature-list .title {
   margin-bottom: 10px;
   color: var(--title-text-color);
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 .feature-list .text {
+  color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.71;
 }
@@ -202,7 +202,7 @@ button {
 .section-title {
   padding-bottom: 50px;
   color: var(--title-text-color);
-  font-weight: 700;
+
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -219,7 +219,7 @@ button {
 .team-title {
   padding-bottom: 50px;
   color: var(--title-text-color);
-  font-weight: 700;
+
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -229,26 +229,25 @@ button {
   gap: 30px;
 }
 .team-item {
-  background: #ffffff;
+  background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
+.description-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  line-height: 1.18;
+}
 .team-list {
-  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
 }
 .team-text {
-  margin-bottom: 30px;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
+  color: var(--primary-text-color);
 }
 /*--------------- FOOTER -------------*/
 .footer {
@@ -277,7 +276,6 @@ button {
   color: var(--primary-white-color);
   font-size: 14px;
   line-height: 1.71;
-  text-decoration: none;
 }
 .footer .aside:hover,
 .footer .aside:focus {
@@ -287,20 +285,17 @@ button {
   margin-bottom: 9px;
 }
 
-.footer .link {
+.footer-contact .link {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
-  text-decoration: none;
 }
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-color);
 }
 /*---- BUTTON ----*/
-.section.section-operation {
-  display: flex;
-}
+
 .button-items {
   display: flex;
 
@@ -336,19 +331,19 @@ button {
 .box {
   padding: 20px 24px;
 
-  background: #ffffff;
+  background-color: var(--primary-white-color);
   border: 1px solid #eeeeee;
   border-top: none;
 }
 .operation-title {
   margin-bottom: 4px;
   color: var(--title-text-color);
-  font-weight: 700;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .operation-text {
-  font-size: 16px;
+  color: var(--primary-text-color);
   line-height: 1.87;
 }
